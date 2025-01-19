@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Luxury Watches</title>
+    <style>
+        /* Gallery styles */
+/* Ensure overall layout and consistency */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:   #e5e4df; /* Beige background */
+}
+
+/* Header styles */
+header {
+    background-color:#16324a; /* Deep brown background */
+    padding: 15px 0;
+    color: #f1f1f1; /* Light beige text */
+}
+
+/* .logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+} */
+
+
+/* .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+}
+
+.company-name{
+    color: white;
+    width: 72px;
+    height: 28px;
+    margin-left: 40px;
+} */
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1f1f1; /* Light beige text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #16324a; /* Deep brown */
+}
+
+/* Buttons to toggle between categories */
+.toggle-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 1 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #16324a; /* dark blue */
+    color: #f1f1f1; /* Light beige */
+    border: none;
+}
+
+.toggle-buttons button:hover {
+    background-color: #c39e6b; /* Brass/Antique gold on hover */
+}
+
+/* Gallery styles */
+.gallery-category {
+    display: none;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 70px;
+    justify-items: center;
+}
+
+/* Gallery item styles */
+.gallery-item {
+    background-color:  #e5e4df; /* Light beige */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(34, 108, 186, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 320px; /* Increase card size */
+    position: relative; /* For positioning the price inside the card */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* More prominent shadow on hover */
+}
+
+/* Image styling */
+.gallery-item img {
+    height: 400px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    margin-bottom: 10px;
+}
+
+/* Price styling */
+.price {
+    font-size: 20px;
+    color: #5388b7; /* Light blue color */
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .price {
+    opacity: 1; /* Show the price on hover */
+}
+
+.gallery-item p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #16324a; /* Deep blue for text */
+}
+
+/* Style for the active category */
+#mens-watches, #womens-watches {
+    display: block;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           
+            <!-- <div class="logo-container">
+                <img src="logo.png" alt="" class="logo">
+                <h1 class="company-name">RIVEX</h1> -->
+
+
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h1>WATCH GALLERY</h1>
+        <!-- Buttons to Toggle Between Men's and Women's Watches -->
+        <div class="toggle-buttons">
+            <button onclick="showCategory('men')">FOR MEN</button>
+            <button onclick="showCategory('women')">FOR WOMEN</button>
+        </div>
+        <!-- Gallery for Men's Watches -->
+        <div id="mens-watches" class="gallery-category">
+            <h2>MENS'S COLLECTION</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="pic1.png" alt="Watch 1">
+                    <p>ZENITH</p>
+                    <span class="price">$500</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH2.png" alt="Watch 2">
+                    <p>SPIRIT</p>
+                    <span class="price">$1200</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH3.png" alt="Watch 3">
+                    <p>BLUE MOON</p>
+                    <span class="price">$2200</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH4.png" alt="Watch 4">
+                    <p>HAMILTON</p>
+                    <span class="price">$700</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH5.png" alt="Watch 5">
+                    <p>DIMAC</p>
+                    <span class="price">$1400</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH6.png" alt="Watch 6">
+                    <p>CONSTELLATION</p>
+                    <span class="price">$1000</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH7.png" alt="Watch 7">
+                    <p>SPEEDMASTER</p>
+                    <span class="price">$2000</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH8.png" alt="Watch 8">
+                    <p>CRONO</p>
+                    <span class="price">$650</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WATCH9.png" alt="Watch 9">
+                    <p>TIREX</p>
+                    <span class="price">$800</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery for Women's Watches -->
+        <div id="womens-watches" class="gallery-category" style="display: none;">
+            <h2>WOMEN'S COLLECTION</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="WW1.png" alt="Watch 1">
+                    <p>MYSTIC</p>
+                    <span class="price">$1800</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW2.png" alt="Watch 2">
+                    <p>VENTURA</p>
+                    <span class="price">$400</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW3.png" alt="Watch 3">
+                    <p>PEARLMASTER</p>
+                    <span class="price">$650</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW4.png" alt="Watch 4">
+                    <p>DE VILLE</p>
+                    <span class="price">$1650</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW5.png" alt="Watch 5">
+                    <p>CARRERA</p>
+                    <span class="price">$950</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW6.png" alt="Watch 6">
+                    <p>LUKIAL</p>
+                    <span class="price">$2250</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW7.png" alt="Watch 7">
+                    <p>ROYAL OAK</p>
+                    <span class="price">$1400</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW8.png" alt="Watch 8">
+                    <p>CENTRIX</p>
+                    <span class="price">$750</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="WW9.png" alt="Watch 9">
+                    <p>FIABA</p>
+                    <span class="price">$1850</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Function to Show the Selected Category of Watches
+        function showCategory(category) {
+            // Hide both categories initially
+            document.getElementById('mens-watches').style.display = 'none';
+            document.getElementById('womens-watches').style.display = 'none';
+
+            // Display the selected category
+            if (category === 'men') {
+                document.getElementById('mens-watches').style.display = 'block';
+            } else if (category === 'women') {
+                document.getElementById('womens-watches').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Timeless Watches</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #16324a;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+
+        nav {
+            flex: 1.65;
+            text-align: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .register a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .register a:hover {
+            background-color: #ffffff;
+            color: #16324a;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            background-color: #f5f5dc; /* Beige color */
+            margin-top: 100px; /* To account for the fixed header */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-content {
+            text-align: justify;
+            color: #555;
+            line-height: 1.6;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="light-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Luxury Watches Logo" class="logo">
+            <h1 class="company-name">RIVEX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="Register.html">Register</a></li>
+        </div>
+    </header>
+    <section class="about-section">
+        <div class="container">
+            <h1 class="about-heading">About Us</h1>
+            <div class="about-gallery">
+                <img src="https://worth.com/wp-content/uploads/2024/07/Laurent-Ferrier_Serie-Atelier-V_Sport-Auto-40_Watch_LCF040.T1.V1GCO_Front-Lifestyle_1-web-1-1024x682-1-300x200.jpg" alt="Classic Watch" class="about-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlTfsMfsPXaq_S_smTHkTRzvMHAJRtrGeJ6A&s" alt="Modern Watch" class="about-image">
+                <img src="https://www.romlicenwatch.com/wp-content/uploads/2024/11/Watch-Dial-Material-300x200.jpg" alt="Luxury Watch" class="about-image">
+            </div>
+            <div class="about-content">
+                <p>Timeless Watches was founded with the vision of creating exceptional timepieces that combine artistry, precision, and innovation. Our purpose is to help individuals express their personality and elevate their style through finely crafted watches.</p>
+
+                <p>Since our inception over a decade ago, we have built a reputation as a trusted brand dedicated to quality and design. With roots in traditional watchmaking and an eye on the future, we pride ourselves on blending timeless craftsmanship with modern aesthetics.</p>
+
+                <p>Our team comprises seasoned watchmakers, designers, and innovators who share a passion for excellence. From engineering state-of-the-art mechanisms to sourcing the finest materials, we strive to exceed expectations in every detail of our watches.</p>
+
+                <p>Beyond crafting exquisite timepieces, we are avid enthusiasts of art, travel, and cultural exploration. These interests inspire our designs and allow us to connect with customers who value creativity and individuality.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html

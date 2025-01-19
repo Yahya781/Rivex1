@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Luxury Watches</title>
+    <style>
+        /* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #16324a;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+nav {
+    flex: 1.65; 
+    text-align: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #b39361; 
+}
+
+
+
+.register {
+    position: absolute;
+    top: 25px;
+    right: 90px;
+}
+
+.register a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #333;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="light-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Luxury Watches Logo" class="logo">
+            <h1 class="company-name">RIVEX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="Register.html">Register</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p class="contact-description">We’d love to hear from you! Feel free to reach out via email, phone.</p>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@RivexWatches.com</p>
+            <p><strong>Phone:</strong> 090032481</p>
+        </div>
+
+        <form class="contact-form">
+            <h2>Send Us a Message</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

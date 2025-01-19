@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Luxury Watches</title>
+    <style>
+         /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow: hidden; 
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:#16324a;
+
+}
+    
+    
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: -20px;
+
+    
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-right: 90px;
+}
+
+nav {
+    flex: 1.65; 
+    text-align: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #16324a; 
+}
+
+
+.register {
+    position: absolute;
+    top: center; 
+    right: 80px; 
+}
+
+.register a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.register a:hover {
+    background-color: #fff; 
+    color: #000; 
+    border-color: #000; 
+}
+
+
+
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: hwb(236 48% 45%);
+}
+
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="watch-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Luxury Watches Logo" class="logo">
+            <h1 class="company-name">RIVEX</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+    </header>
+    
+    <section id="login">
+        <div class="login-container">
+            <h1>LOGIN</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Luxury Watches. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            const username = document.getElementById('username').value;
+            
+            // Redirect to welcome.html with the username as a query parameter
+            window.location.href = `welcome.html?username=${encodeURIComponent(username)}`;
+        });
+    </script>
+</body>
+</html>
